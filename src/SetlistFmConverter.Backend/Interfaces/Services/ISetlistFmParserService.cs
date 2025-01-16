@@ -5,5 +5,5 @@ namespace SetlistFmConverter.Backend.Interfaces.Services;
 
 public interface ISetlistFmParserService : IBaseService
 {
-    IEnumerable<TrackDto> GetTracksFromUrl(string url);
+    Task<IEnumerable<TrackDto>> GetTracksFromUrl(string url);
 }

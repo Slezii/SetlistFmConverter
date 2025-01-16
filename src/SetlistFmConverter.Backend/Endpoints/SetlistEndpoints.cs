@@ -7,11 +7,12 @@ public static class SetlistEndpoints
 {
     public static WebApplication CreateEndpoints(this WebApplication app)
     {
-        app.MapGet("/playlist", (
+        app.MapGet("/playlist", async (
                 [FromQuery] string? url,
                 [FromServices] ISetlistFmParserService setlistFmParserService) =>
             {
-                return Results.Ok(setlistFmParserService.GetTracksFromUrl(url));
+                var tracks = await setlistFmParserService.GetTracksFromUrl(url);
+                return Results.Ok(tracks);
             })
             .WithName("GetPlaylist");
 
