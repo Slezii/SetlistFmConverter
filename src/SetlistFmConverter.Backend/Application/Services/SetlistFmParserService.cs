@@ -33,7 +33,6 @@ public class SetlistFmParserService : BaseService, ISetlistFmParserService
                 };
             }
         }
-
         return tracks;
     }
 }
