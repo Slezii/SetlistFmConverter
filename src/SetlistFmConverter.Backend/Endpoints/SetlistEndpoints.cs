@@ -11,6 +11,7 @@ public static class SetlistEndpoints
                 [FromQuery] string? url,
                 [FromServices] ISetlistFmParserService setlistFmParserService) =>
             {
+                if (url is null) return Results.BadRequest();
                 var tracks = await setlistFmParserService.GetTracksFromUrl(url);
                 return Results.Ok(tracks);
             })
