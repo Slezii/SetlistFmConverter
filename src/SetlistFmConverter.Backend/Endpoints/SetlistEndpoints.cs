@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using SetlistFmConverter.Backend.Interfaces.Services;
+using SetlistFmConverter.Backend.ContextIntegration.Services;
 
 namespace SetlistFmConverter.Backend.Endpoints;
 

@@ -1,7 +1,7 @@
 using SetlistFmConverter.Backend.Infrastructure.Base;
 using SetlistFmConverter.Backend.Models.Songs;
 
-namespace SetlistFmConverter.Backend.Interfaces.Services;
+namespace SetlistFmConverter.Backend.ContextIntegration.Services;
 
 public interface ISetlistFmParserService : IBaseService
 {

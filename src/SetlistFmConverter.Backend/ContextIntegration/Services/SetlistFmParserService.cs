@@ -3,7 +3,7 @@ using SetlistFmConverter.Backend.Infrastructure.Base;
 using SetlistFmConverter.Backend.Interfaces.Services;
 using SetlistFmConverter.Backend.Models.Songs;
 
-namespace SetlistFmConverter.Backend.Application.Services;
+namespace SetlistFmConverter.Backend.ContextIntegration.Services;
 
 public class SetlistFmParserService : BaseService, ISetlistFmParserService
 {
